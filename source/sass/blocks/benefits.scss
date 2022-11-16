@@ -1,0 +1,139 @@
+.benefits {
+  position: relative;
+  z-index: 0;
+  min-width: 320px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.benefits__container {
+  position: relative;
+  z-index: 2;
+
+  @include vp-1023 {
+    padding-bottom: 99px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 64px;
+  }
+}
+
+.benefits__title {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 49px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+
+  @include vp-1023 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  @include vp-767 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+}
+
+.benefits__list {
+  display: grid;
+  grid-template-columns: repeat(3, calc((100% - 80px) / 3));
+  grid-column-gap: 40px;
+  grid-row-gap: 30px;
+
+  @include vp-1023 {
+    grid-template-columns: repeat(3, calc((100% - 60px) / 3));
+    grid-column-gap: 30px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 100%;
+    grid-row-gap: 30px;
+  }
+}
+
+.benefits__item {
+  background-color: $color-alice-blue;
+  min-height: 241px;
+  padding: 30px;
+
+  @include vp-1023 {
+    padding: 26px 16px 16px 20px;
+    min-height: 310px;
+  }
+
+  @include vp-767 {
+    min-height: 250px;
+  }
+}
+
+.benefits__icon {
+  height: 32px;
+  width: 32px;
+
+  @include vp-1023 {
+    height: 26px;
+    width: 26px;
+  }
+}
+
+.benefits__icon--ship {
+  width: 27px;
+
+  @include vp-1023 {
+    width: 21px;
+  }
+}
+
+.benefits__icon--all {
+  width: 38px;
+
+  @include vp-1023 {
+    width: 27px;
+  }
+}
+
+.benefits__icon--tour {
+  width: 44px;
+
+  @include vp-1023 {
+    width: 36px;
+  }
+}
+
+.benefits h3 {
+  margin-top: 13px;
+  margin-bottom: 8px;
+  line-height: 27px;
+  font-weight: 500;
+  font-size: 18px;
+
+  @include vp-1023 {
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 12px;
+  }
+
+  @include vp-767 {
+    width: 170px;
+    margin-bottom: 9px;
+  }
+}
+
+.benefits__item--tour h3 {
+  @include vp-1023 {
+    margin-bottom: 19px;
+  }
+}
+
+.benefits p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
