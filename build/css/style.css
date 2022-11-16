@@ -641,7 +641,7 @@ button,
 .container {
   font-family: "Montserrat", "Arial", sans-serif;
   color: #011c40;
-  padding: 120px 30px;
+  padding: 110px 30px 120px;
   margin: 0 auto;
   max-width: 1220px;
   width: 100%;
@@ -673,6 +673,17 @@ button,
 
 .btn.focus-visible:focus {
   opacity: 0.8;
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .modal {
@@ -907,17 +918,6 @@ button,
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.main-banner__bg {
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  -o-object-fit: cover;
-  object-fit: cover;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
 .main-banner__container {
   color: #f9fbfd;
   z-index: 2;
@@ -947,6 +947,7 @@ button,
 }
 
 .travel__container {
+  padding-top: 120px;
   padding-bottom: 145px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -983,6 +984,76 @@ button,
 
 .travel__pic {
   width: 100%;
+}
+
+.benefits {
+  position: relative;
+  z-index: 0;
+  min-width: 320px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.benefits__container {
+  position: relative;
+  z-index: 2;
+}
+
+.benefits__title {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 49px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+}
+
+.benefits__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (calc((100% - 80px) / 3))[3];
+  grid-template-columns: repeat(3, calc((100% - 80px) / 3));
+  grid-column-gap: 40px;
+  grid-row-gap: 30px;
+}
+
+.benefits__item {
+  background-color: #f9fbfd;
+  min-height: 241px;
+  padding: 30px;
+}
+
+.benefits__icon {
+  height: 32px;
+  width: 32px;
+}
+
+.benefits__icon--ship {
+  width: 27px;
+}
+
+.benefits__icon--all {
+  width: 38px;
+}
+
+.benefits__icon--tour {
+  width: 44px;
+}
+
+.benefits h3 {
+  margin-top: 13px;
+  margin-bottom: 8px;
+  line-height: 27px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.benefits p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .main-footer {
@@ -1124,7 +1195,7 @@ button,
 @media (max-width: 1023px) {
   .container {
     min-width: 768px;
-    padding: 90px 45px 100px;
+    padding: 90px 45px 95px;
   }
 
   .main-header {
@@ -1192,6 +1263,53 @@ button,
     height: auto;
   }
 
+  .benefits__container {
+    padding-bottom: 99px;
+  }
+
+  .benefits__title {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  .benefits__list {
+    -ms-grid-columns: (calc((100% - 60px) / 3))[3];
+    grid-template-columns: repeat(3, calc((100% - 60px) / 3));
+    grid-column-gap: 30px;
+  }
+
+  .benefits__item {
+    padding: 26px 16px 16px 20px;
+    min-height: 310px;
+  }
+
+  .benefits__icon {
+    height: 26px;
+    width: 26px;
+  }
+
+  .benefits__icon--ship {
+    width: 21px;
+  }
+
+  .benefits__icon--all {
+    width: 27px;
+  }
+
+  .benefits__icon--tour {
+    width: 36px;
+  }
+
+  .benefits h3 {
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 12px;
+  }
+
+  .benefits__item--tour h3 {
+    margin-bottom: 19px;
+  }
+
   .main-footer__container {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -1235,7 +1353,7 @@ button,
 @media (max-width: 767px) {
   .container {
     min-width: 320px;
-    padding: 57px 15px 65px;
+    padding: 57px 15px 85px;
   }
 
   .modal__wrapper {
@@ -1360,6 +1478,31 @@ button,
     margin-right: 0;
     margin-top: 43px;
     width: 100%;
+  }
+
+  .benefits__container {
+    padding-bottom: 64px;
+  }
+
+  .benefits__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+
+  .benefits__list {
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    grid-row-gap: 30px;
+  }
+
+  .benefits__item {
+    min-height: 250px;
+  }
+
+  .benefits h3 {
+    width: 170px;
+    margin-bottom: 9px;
   }
 
   .main-footer__container {
