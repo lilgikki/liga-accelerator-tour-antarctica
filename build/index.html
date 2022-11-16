@@ -70,15 +70,69 @@
                 Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы&nbsp;сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и&nbsp;многое другое.
               </p>
             </div>
-            <picture class="travel__pic">
+            <picture class="travel__pic-container">
               <source type="image/webp" srcset="img/about.webp, img/about@2.webp 2x">
-              <img src="img/about.jpg" srcset="img/about@2.jpg" alt="Фон раздела о путешестиях">
+              <img class="travel__pic" src="img/about.jpg" srcset="img/about@2.jpg" alt="Фон раздела о путешестиях">
             </picture>
           </div>
         </section>
       </main>
-      <footer>
-        <div class="container"></div>
+      <footer class="main-footer">
+        <div class="main-footer__container container">
+          <nav class="main-footer__nav">
+            <svg class="main-footer__logo">
+              <use xlink:href="img/sprite/sprite.svg#logotype"></use>
+            </svg>
+            <ul class="main-footer__list list">
+              <li class="main-footer__item">
+                <a class="main-footer__link" href="#">
+                  Преимущества
+                </a>
+              </li>
+              <li class="main-footer__item">
+                <a class="main-footer__link" href="#">
+                  Направления
+                </a>
+              </li>
+              <li class="main-footer__item">
+                <a class="main-footer__link" href="#">
+                  Ближайшие круизы
+                </a>
+              </li>
+              <li class="main-footer__item">
+                <a class="main-footer__link" href="#">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="main-footer__socials list">
+            <li class="main-footer__social">
+              <a class="main-footer__social-link">
+                <span class="visually-hidden">Одноклассники</span>
+                <svg class="main-footer__icon main-footer__icon--ok">
+                  <use xlink:href="img/sprite/sprite.svg#socials-ok"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="main-footer__social">
+              <a class="main-footer__social-link">
+                <span class="visually-hidden">Яндекс Дзен</span>
+                <svg class="main-footer__icon">
+                  <use xlink:href="img/sprite/sprite.svg#socials-dzen"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="main-footer__social">
+              <a class="main-footer__social-link">
+                <span class="visually-hidden">Реддит</span>
+                <svg class="main-footer__icon">
+                  <use xlink:href="img/sprite/sprite.svg#socials-reddit"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </footer>
     </div>
 
