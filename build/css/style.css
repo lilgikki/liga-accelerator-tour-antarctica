@@ -639,8 +639,9 @@ button,
 }
 
 .container {
-  padding: 30px 30px 35px;
-  padding-right: 60px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: #011c40;
+  padding: 120px 30px;
   margin: 0 auto;
   max-width: 1220px;
   width: 100%;
@@ -787,10 +788,9 @@ button,
 }
 
 .main-header {
-  z-index: 2;
+  z-index: 3;
   min-width: 320px;
   overflow: hidden;
-  font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -901,6 +901,9 @@ button,
   width: 100%;
   min-height: 650px;
   position: relative;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .main-banner__bg {
@@ -915,7 +918,66 @@ button,
 }
 
 .main-banner__container {
+  color: #f9fbfd;
   z-index: 2;
+  position: relative;
+  padding: 270px 0 0 125px;
+}
+
+.main-banner__title {
+  margin: 0;
+  margin-bottom: 13px;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 66px;
+}
+
+.main-banner__description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.travel {
+  min-width: 320px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.travel__container {
+  padding-bottom: 145px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.travel__text {
+  width: 45%;
+  margin-top: 57px;
+}
+
+.travel__text h2 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  margin-bottom: 23px;
+}
+
+.travel__text p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.travel__pic {
+  width: 560px;
+  height: 301px;
 }
 
 /* @mixin hover-focus {
@@ -962,7 +1024,7 @@ button,
 @media (max-width: 1023px) {
   .container {
     min-width: 768px;
-    padding: 30px 45px 25px;
+    padding: 90px 45px 100px;
   }
 
   .main-header {
@@ -972,6 +1034,7 @@ button,
 
   .main-header__container {
     padding-bottom: 0;
+    padding: 30px 45px 25px;
   }
 
   .main-header__logo {
@@ -987,12 +1050,53 @@ button,
   .main-header__item {
     margin: 1px 0;
   }
+
+  .main-banner {
+    min-height: 638px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-shadow: none;
+  }
+
+  .main-banner__container {
+    padding-top: 268px;
+  }
+
+  .main-banner__title {
+    margin-bottom: 12px;
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  .main-banner__description {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .travel__text {
+    margin-top: 0;
+    width: 47.5%;
+  }
+
+  .travel__text h2 {
+    margin-bottom: 16px;
+    width: 205px;
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .travel__pic {
+    margin-top: 10px;
+    margin-right: 5px;
+    width: 47.5%;
+    height: auto;
+  }
 }
 
 @media (max-width: 767px) {
   .container {
     min-width: 320px;
-    padding: 20px 15px 20px;
+    padding: 57px 15px 65px;
   }
 
   .modal__wrapper {
@@ -1006,6 +1110,10 @@ button,
 
   .modal--fit-content .modal__content {
     width: 100%;
+  }
+
+  .main-header__container {
+    padding: 20px 15px 20px;
   }
 
   .main-header__toggle {
@@ -1073,6 +1181,46 @@ button,
   .main-header--opened .main-header__logo {
     fill: #011c40;
     margin-bottom: 42px;
+  }
+
+  .main-banner {
+    min-height: 500px;
+  }
+
+  .main-banner__container {
+    padding-top: 175px;
+  }
+
+  .main-banner__title {
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  .main-banner__description {
+    width: 200px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .travel__container {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .travel__text {
+    width: 100%;
+  }
+
+  .travel__text h2 {
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 15px;
+  }
+
+  .travel__pic {
+    margin-right: 0;
+    margin-top: 43px;
+    width: 100%;
   }
 }
 

@@ -1,6 +1,8 @@
 .container {
-  padding: 30px 30px 35px;
-  padding-right: 60px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: $color-tangaroa;
+  padding: 120px 30px;
+  // padding-right: 60px;
   margin: 0 auto;
   max-width: 1220px;
   width: 100%;
@@ -8,11 +10,11 @@
 
   @include vp-1023 {
     min-width: 768px;
-    padding: 30px 45px 25px;
+    padding: 90px 45px 100px;
   }
 
   @include vp-767 {
     min-width: 320px;
-    padding: 20px 15px 20px;
+    padding: 57px 15px 65px;
   }
 }
