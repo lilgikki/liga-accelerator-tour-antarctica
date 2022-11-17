@@ -1172,11 +1172,15 @@ button,
 }
 
 .catalog__item:hover .catalog__text {
-  display: block;
-}
-
-.catalog__item:hover p {
-  margin-bottom: 12px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+  grid-template-columns: 100%;
+  -ms-grid-rows: -webkit-max-content;
+  -ms-grid-rows: max-content;
+  grid-template-rows: -webkit-max-content;
+  grid-template-rows: max-content;
+  grid-row-gap: 12px;
 }
 
 .catalog__item:hover .catalog__link {
@@ -1685,7 +1689,7 @@ button,
   }
 
   .catalog__item:hover .catalog__about {
-    padding: 29px 25px 35px;
+    padding: 29px 25px 34px;
   }
 
   .main-footer__container {
