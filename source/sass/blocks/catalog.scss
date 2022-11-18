@@ -125,6 +125,10 @@
   background-color: $color-alice-blue;
   color: $color-tangaroa;
   padding: 10px;
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
 }
 
 .catalog__item:hover .catalog__about {

@@ -840,10 +840,18 @@ button,
   height: 14px;
 }
 
+.main-header__toggle.focus-visible:focus {
+  opacity: 0.8;
+}
+
 .main-header__logo {
   fill: #f9fbfd;
   width: 70px;
   height: 38px;
+}
+
+.main-header__logo.focus-visible:focus {
+  opacity: 0.8;
 }
 
 .main-header__list {
@@ -866,6 +874,11 @@ button,
 
 .main-header__link {
   color: #f9fbfd;
+  cursor: pointer;
+}
+
+.main-header__link.focus-visible:focus {
+  opacity: 0.8;
 }
 
 .main-header--opened .main-header__toggle {
@@ -1159,6 +1172,10 @@ button,
   padding: 10px;
 }
 
+.catalog__link.focus-visible:focus {
+  opacity: 0.8;
+}
+
 .catalog__item:hover .catalog__about {
   position: relative;
   -webkit-transition: 0.6s;
@@ -1319,6 +1336,7 @@ button,
 }
 
 .booking__checkbox-container label {
+  cursor: pointer;
   width: 100%;
   display: block;
   margin: 23px 0 30px;
@@ -1326,6 +1344,10 @@ button,
   font-weight: 400;
   font-size: 10px;
   line-height: 13px;
+}
+
+.booking__checkbox-container label.focus-visible:focus {
+  opacity: 0.8;
 }
 
 .booking__checkbox-container label::before {
@@ -1355,6 +1377,7 @@ button,
 }
 
 .booking__submit {
+  cursor: pointer;
   padding: 12px;
   width: 100%;
   text-align: center;
@@ -1364,6 +1387,10 @@ button,
   line-height: 21px;
   background-color: #f9fbfd;
   color: #011c40;
+}
+
+.booking__submit.focus-visible:focus {
+  opacity: 0.8;
 }
 
 .contacts {
@@ -1392,6 +1419,10 @@ button,
   z-index: 2;
 }
 
+.contacts__bg {
+  z-index: 0;
+}
+
 .contacts__description {
   margin: 0;
   font-weight: 500;
@@ -1404,6 +1435,10 @@ button,
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+}
+
+.contacts__text--tel.focus-visible:focus {
+  opacity: 0.8;
 }
 
 .contacts__icon {
@@ -1476,9 +1511,14 @@ button,
 }
 
 .main-footer__link {
+  cursor: pointer;
   color: #f9fbfd;
   font-size: 16px;
   line-height: 20px;
+}
+
+.main-footer__link.focus-visible:focus {
+  opacity: 0.8;
 }
 
 .main-footer__logo {
@@ -1486,6 +1526,10 @@ button,
   fill: #f9fbfd;
   width: 70px;
   height: 38px;
+}
+
+.main-footer__logo.focus-visible:focus {
+  opacity: 0.8;
 }
 
 .main-footer__socials {
@@ -1512,6 +1556,10 @@ button,
 
 .main-footer__social-link {
   display: block;
+}
+
+.main-footer__social-link.focus-visible:focus {
+  opacity: 0.8;
 }
 
 .main-footer__icon {
@@ -1889,7 +1937,7 @@ button,
 
   .main-header--opened .main-header__logo {
     fill: #011c40;
-    margin-bottom: 42px;
+    margin-bottom: 38px;
   }
 
   .main-banner {
@@ -2084,7 +2132,7 @@ button,
 
   .main-footer__logo {
     margin-right: 0;
-    margin-bottom: 25px;
+    margin-bottom: 18px;
     width: 42px;
     height: 22px;
   }
@@ -2096,6 +2144,46 @@ button,
 
 @media (hover: hover) {
   .btn:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+
+  .main-header__toggle:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+
+  .main-header__logo:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+
+  .main-header__link:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+
+  .catalog__link:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+
+  .booking__checkbox-container label:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+
+  .booking__submit:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+
+  .contacts__text--tel:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+
+  .main-footer__link:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+
+  .main-footer__logo:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+
+  .main-footer__social-link:hover:not(.focus-visible) {
     opacity: 0.8;
   }
 }

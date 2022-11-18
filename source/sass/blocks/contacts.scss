@@ -42,6 +42,10 @@
   }
 }
 
+.contacts__bg {
+  z-index: 0;
+}
+
 .contacts__description {
   margin: 0;
   font-weight: 500;
@@ -62,6 +66,12 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+}
+
+.contacts__text--tel {
+  @include hover-focus {
+    opacity: 0.8;
+  }
 }
 
 .contacts__icon {
