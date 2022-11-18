@@ -920,6 +920,7 @@ button,
 }
 
 .main-banner {
+  background-color: #76a0cd;
   z-index: 0;
   min-width: 320px;
   overflow: hidden;
@@ -1412,7 +1413,7 @@ button,
 }
 
 .contacts__map {
-  background-color: bisque;
+  background-color: #dae7f4;
   width: 100%;
   height: 306px;
   position: relative;

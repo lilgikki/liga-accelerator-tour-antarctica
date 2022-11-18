@@ -32,13 +32,15 @@ const scroll = (block) => {
 
 const scrollToBenefits = () => {
   if (benefits && benefitsLink) {
-    benefitsLink.addEventListener('click', () => {
+    benefitsLink.addEventListener('click', (evt) => {
+      evt.preventDefault();
       scroll(benefits);
       closeMenu();
     });
   }
   if (benefits && benefitsLinkFooter) {
-    benefitsLinkFooter.addEventListener('click', () => {
+    benefitsLinkFooter.addEventListener('click', (evt) => {
+      evt.preventDefault();
       scroll(benefits);
       closeMenu();
     });
@@ -47,13 +49,15 @@ const scrollToBenefits = () => {
 
 const scrollToCatalog = () => {
   if (catalog && catalogLink) {
-    catalogLink.addEventListener('click', () => {
+    catalogLink.addEventListener('click', (evt) => {
+      evt.preventDefault();
       scroll(catalog);
       closeMenu();
     });
   }
   if (catalog && catalogLinkFooter) {
-    catalogLinkFooter.addEventListener('click', () => {
+    catalogLinkFooter.addEventListener('click', (evt) => {
+      evt.preventDefault();
       scroll(catalog);
       closeMenu();
     });
@@ -62,13 +66,15 @@ const scrollToCatalog = () => {
 
 const scrollToTravel = () => {
   if (travel && travelLink) {
-    travelLink.addEventListener('click', () => {
+    travelLink.addEventListener('click', (evt) => {
+      evt.preventDefault();
       scroll(travel);
       closeMenu();
     });
   }
   if (travel && travelLinkFooter) {
-    travelLinkFooter.addEventListener('click', () => {
+    travelLinkFooter.addEventListener('click', (evt) => {
+      evt.preventDefault();
       scroll(travel);
       closeMenu();
     });
@@ -77,13 +83,15 @@ const scrollToTravel = () => {
 
 const scrollToContacts = () => {
   if (contacts && contactsLink) {
-    contactsLink.addEventListener('click', () => {
+    contactsLink.addEventListener('click', (evt) => {
+      evt.preventDefault();
       scroll(contacts);
       closeMenu();
     });
   }
   if (contacts && contactsLinkFooter) {
-    contactsLinkFooter.addEventListener('click', () => {
+    contactsLinkFooter.addEventListener('click', (evt) => {
+      evt.preventDefault();
       scroll(contacts);
       closeMenu();
     });
