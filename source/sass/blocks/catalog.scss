@@ -12,8 +12,12 @@
   }
 
   @include vp-767 {
-    padding: 57px 25px 85px;
+    padding: 57px 25px 65px;
   }
+}
+
+.catalog__pic {
+  background-color: $color-polo-blue;
 }
 
 .catalog__title {
@@ -53,13 +57,12 @@
 }
 
 .catalog__item {
-  background-color: $color-polo-blue;
   color: $color-alice-blue;
   width: 100%;
   min-height: 386px;
   position: relative;
   z-index: 2;
-  background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%);
+  background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, $color-tangaroa 100%);
 }
 
 .catalog__about {
@@ -137,7 +140,7 @@
   }
 
   @include vp-767 {
-    padding: 29px 25px 35px;
+    padding: 29px 25px 34px;
   }
 }
 
@@ -150,11 +153,10 @@
 }
 
 .catalog__item:hover .catalog__text {
-  display: block;
-}
-
-.catalog__item:hover p {
-  margin-bottom: 12px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: max-content;
+  grid-row-gap: 12px;
 }
 
 .catalog__item:hover .catalog__link {
