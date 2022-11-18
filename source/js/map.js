@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const COORDINATES = [59.937511252406686, 30.322611701832432];
 const ZOOM = 16;
 

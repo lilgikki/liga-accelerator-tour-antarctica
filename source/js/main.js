@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {activateMenu} from './menu.js';
