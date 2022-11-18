@@ -17,27 +17,29 @@
           <button class="main-header__toggle" type="button" id="menu-toggle">
             <span class="visually-hidden">Кнопка открытия и закрытия меню</span>
           </button>
-          <svg class="main-header__logo">
-            <use xlink:href="img/sprite/sprite.svg#logotype"></use>
-          </svg>
+          <a>
+            <svg class="main-header__logo">
+              <use xlink:href="img/sprite/sprite.svg#logotype"></use>
+            </svg>
+          </a>
           <ul class="main-header__list list">
             <li class="main-header__item">
-              <a class="main-header__link" href="#">
+              <a class="main-header__link"  id="benefits-link">
                 Преимущества
               </a>
             </li>
             <li class="main-header__item">
-              <a class="main-header__link" href="#">
+              <a class="main-header__link" id="catalog-link">
                 Направления
               </a>
             </li>
             <li class="main-header__item">
-              <a class="main-header__link" href="#">
+              <a class="main-header__link" id="travel-link">
                 Ближайшие круизы
               </a>
             </li>
             <li class="main-header__item">
-              <a class="main-header__link" href="#">
+              <a class="main-header__link" id="contacts-link">
                 Контакты
               </a>
             </li>
@@ -60,7 +62,7 @@
             <p class="main-banner__description">Волшебный мир айсбергов и&nbsp;пингвинов</p>
           </div>
         </section>
-        <section class="travel">
+        <section class="travel" id="travel">
           <div class="travel__container container">
             <div class="travel__text">
               <h2>
@@ -76,7 +78,7 @@
             </picture>
           </div>
         </section>
-        <section class="benefits">
+        <section class="benefits" id="benefits">
           <picture>
             <source type="image/webp" media="(min-width: 1024px)" srcset="img/benefits-bg-desktop.webp, img/benefits-bg-desktop@2.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/benefits-bg-tablet.webp, img/benefits-bg-tablet@2.webp 2x">
@@ -112,7 +114,7 @@
             </ul>
           </div>
         </section>
-        <section class="catalog">
+        <section class="catalog" id="catalog">
           <div class="catalog__container container">
             <h2 class="catalog__title">Ближайшие круизы</h2>
             <ul class="catalog__list list">
@@ -412,7 +414,7 @@
             </form>
           </div>
         </section>
-        <section class="contacts">
+        <section class="contacts" id="contacts">
           <h2 class="visually-hidden">Контакты</h2>
           <div class="contacts__container container">
             <div class="contacts__map" id="map">
@@ -420,7 +422,7 @@
                 <source type="image/webp" media="(min-width: 1024px)" srcset="img/map-bg-desktop.webp, img/map-bg-desktop@2.webp 2x">
                 <source type="image/webp" srcset="img/map-bg-tablet.webp, img/map-bg-tablet@2.webp 2x">
                 <source media="(min-width: 1024px)" srcset="img/map-bg-desktop.jpg, img/map-bg-desktop@2.jpg 2x">
-                <img class="bg" src="img/map-bg-tablet.jpg" srcset="img/map-bg-tablet@2.jpg" alt="Фон карты">
+                <img class="contacts__bg bg" src="img/map-bg-tablet.jpg" srcset="img/map-bg-tablet@2.jpg" alt="Фон карты">
               </picture>
             </div>
             <div class="contacts__info">
@@ -436,7 +438,7 @@
                   <svg class="contacts__icon">
                     <use xlink:href="img/sprite/sprite.svg#telephone"></use>
                   </svg>
-                  <a class="contacts__text" href="tel:+78002000000">8-800-200-00-00</a>
+                  <a class="contacts__text contacts__text--tel" href="tel:+78002000000">8-800-200-00-00</a>
                 </li>
               </ul>
             </div>
@@ -446,27 +448,29 @@
       <footer class="main-footer">
         <div class="main-footer__container container">
           <nav class="main-footer__nav">
-            <svg class="main-footer__logo">
-              <use xlink:href="img/sprite/sprite.svg#logotype"></use>
-            </svg>
+            <a href="index.html">
+              <svg class="main-footer__logo">
+                <use xlink:href="img/sprite/sprite.svg#logotype"></use>
+              </svg>
+            </a>
             <ul class="main-footer__list list">
               <li class="main-footer__item">
-                <a class="main-footer__link" href="#">
+                <a class="main-footer__link" id="benefits-link-footer">
                   Преимущества
                 </a>
               </li>
               <li class="main-footer__item">
-                <a class="main-footer__link" href="#">
+                <a class="main-footer__link" id="catalog-link-footer">
                   Направления
                 </a>
               </li>
               <li class="main-footer__item">
-                <a class="main-footer__link" href="#">
+                <a class="main-footer__link" id="travel-link-footer">
                   Ближайшие круизы
                 </a>
               </li>
               <li class="main-footer__item">
-                <a class="main-footer__link" href="#">
+                <a class="main-footer__link" id="contacts-link-footer">
                   Контакты
                 </a>
               </li>
@@ -501,8 +505,8 @@
         </div>
       </footer>
     </div>
+    <script src="https://api-maps.yandex.ru/2.1?apikey=870f222b-95d1-4ee9-84d4-676adfaf5756&load=package.full&lang=ru_RU"></script>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=870f222b-95d1-4ee9-84d4-676adfaf5756&lang=ru_RU"></script>
   </body>
 </html>

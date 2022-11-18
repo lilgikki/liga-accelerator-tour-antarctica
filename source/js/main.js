@@ -1,7 +1,10 @@
+/* eslint-disable no-undef */
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {activateMenu} from './menu.js';
 import {submitFormBooking, getMask} from './booking.js';
+import {yandexMap} from './map.js';
+import {scrollTo} from './scroll.js';
 
 // ---------------------------------
 
@@ -18,6 +21,9 @@ window.addEventListener('DOMContentLoaded', () => {
   activateMenu();
   submitFormBooking();
   getMask();
+
+  ymaps.ready(yandexMap);
+  scrollTo();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
