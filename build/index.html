@@ -3,7 +3,6 @@
   <head>
     <link rel="preload" href="css/style.min.css" as="style">
     <link rel="preload" href="fonts/montserrat-400.woff" as="font" crossorigin="anonymous">
-    <link rel="preload" href="img/main-bg-mobile.webp" as="image" crossorigin="anonymous">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -374,6 +373,43 @@
                 </div>
               </li>
             </ul>
+          </div>
+        </section>
+        <section class="booking">
+          <picture class="booking__pic">
+            <source type="image/webp" media="(min-width: 1024px)" srcset="img/form-bg-desktop.webp, img/form-bg-desktop@2.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/form-bg-tablet.webp, img/form-bg-tablet@2.webp 2x">
+            <source type="image/webp" srcset="img/form-bg-mobile.webp, img/form-bg-mobile@2.webp 2x">
+            <source media="(min-width: 1024px)" srcset="img/form-bg-desktop.jpg, img/form-bg-desktop@2.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/form-bg-tablet.jpg, img/form-bg-tablet@2.jpg 2x">
+            <img class="bg" src="img/form-bg-mobile.jpg" srcset="img/form-bg-mobile@2.jpg" alt="Фон круиза Минион">
+          </picture>
+          <div class="booking__container container">
+            <div class="booking__text">
+              <h2 class="booking__title">Раннее бронирование</h2>
+              <p class="booking__about">Забронируйте тур за&nbsp;3&#8209;6&nbsp;месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
+            </div>
+            <form action="https://echo.htmlacademy.ru/" method="get" id="booking-form">
+              <p class="booking__description">Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
+              <div class="booking__inputs-wrapper">
+                <label for="name">
+                  <input type="text" id="name" placeholder="Имя" name="name" pattern="^[A-Za-zА-Яа-яЁё\s]+$" required>
+                </label>
+                <label for="tel">
+                  <input type="tel" id="tel" placeholder="Телефон" name="telephone" pattern="8[0-9]{10}" required>
+                </label>
+                <label for="email">
+                  <input type="email" id="email" placeholder="Email" name="email" required>
+                </label>
+              </div>
+              <div class="booking__checkbox-container">
+                <input type="checkbox" id="check" name="checkbox" required>
+                <label for="check">
+                  Я&nbsp;согласен на&nbsp;обработку моих&nbsp;персональных данных
+                </label>
+              </div>
+              <button class="booking__submit" type="submit">Оставить заявку</button>
+            </form>
           </div>
         </section>
       </main>

@@ -1189,6 +1189,180 @@ button,
   display: flex;
 }
 
+.booking {
+  background-color: #76a0cd;
+  position: relative;
+  z-index: 0;
+  min-width: 320px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.booking__container {
+  padding: 50px 90px 50px;
+  position: relative;
+  z-index: 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: calc(100% - 403px - 144px) 403px;
+  grid-template-columns: calc(100% - 403px - 144px) 403px;
+  grid-column-gap: 144px;
+}
+
+.booking__text {
+  max-width: 493px;
+  min-width: 400px;
+  color: #011c40;
+}
+
+.booking__title {
+  margin: 0;
+  margin-top: 163px;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.booking__about {
+  width: 352px;
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.booking form {
+  display: block;
+  padding: 44px 50px 50px;
+  width: 403px;
+  background-color: #011c40;
+  color: #f9fbfd;
+  -webkit-box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+}
+
+.booking__description {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0;
+  margin-bottom: 27px;
+}
+
+.booking__inputs-wrapper {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+  grid-template-columns: 100%;
+  grid-row-gap: 21px;
+}
+
+.booking input {
+  padding: 12px 16px 12px;
+  width: 100%;
+  border: none;
+  background-color: #f9fbfd;
+}
+
+.booking input::-webkit-input-placeholder {
+  color: rgba(1, 28, 64, 0.7);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.booking input::-moz-placeholder {
+  color: rgba(1, 28, 64, 0.7);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.booking input:-ms-input-placeholder {
+  color: rgba(1, 28, 64, 0.7);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.booking input::-ms-input-placeholder {
+  color: rgba(1, 28, 64, 0.7);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.booking input::placeholder {
+  color: rgba(1, 28, 64, 0.7);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.booking__checkbox-container {
+  position: relative;
+  z-index: 3;
+}
+
+.booking__checkbox-container input {
+  width: 18px;
+  height: 18px;
+  top: 20px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+}
+
+.booking__checkbox-container label {
+  width: 100%;
+  display: block;
+  margin: 23px 0 30px;
+  padding-left: 24px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.booking__checkbox-container label::before {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  display: block;
+  content: "";
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  background-color: #f9fbfd;
+}
+
+.booking__checkbox-container input:checked + label::after {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  display: block;
+  content: "";
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/svg/icon-checked.svg");
+  background-repeat: no-repeat;
+  background-position: 3px 5px;
+}
+
+.booking__submit {
+  padding: 12px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: #f9fbfd;
+  color: #011c40;
+}
+
 .main-footer {
   background-color: #011c40;
   color: #f9fbfd;
@@ -1474,6 +1648,39 @@ button,
     margin-bottom: 14px;
   }
 
+  .booking__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 87px 45px 99px;
+  }
+
+  .booking__title {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 34px;
+    line-height: 51px;
+  }
+
+  .booking__about {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 53px;
+  }
+
+  .booking__inputs-wrapper {
+    grid-row-gap: 20px;
+  }
+
+  .booking__checkbox-container label {
+    margin: 24px 0 31px;
+  }
+
   .main-footer__container {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -1670,7 +1877,7 @@ button,
   }
 
   .catalog__container {
-    padding: 57px 25px 85px;
+    padding: 57px 25px 65px;
   }
 
   .catalog__title {
@@ -1690,6 +1897,66 @@ button,
 
   .catalog__item:hover .catalog__about {
     padding: 29px 25px 34px;
+  }
+
+  .booking__container {
+    padding: 60px 15px 65px;
+  }
+
+  .booking__text {
+    min-width: 260px;
+  }
+
+  .booking__title {
+    text-align: center;
+    margin: 0 auto 13px;
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .booking__about {
+    width: 260px;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 33px;
+  }
+
+  .booking form {
+    padding: 36px 30px 40px;
+  }
+
+  .booking__description {
+    margin: 0 auto 28px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .booking__inputs-wrapper {
+    grid-row-gap: 21px;
+  }
+
+  .booking__checkbox-container label {
+    width: 180px;
+    margin: 19px 0 28px;
+    line-height: 12px;
+    padding-left: 28px;
+  }
+
+  .booking__checkbox-container label::before {
+    top: 0;
+    width: 20px;
+    height: 20px;
+  }
+
+  .booking__checkbox-container input:checked + label::after {
+    top: 0;
+    width: 20px;
+    height: 20px;
+  }
+
+  .booking__submit {
+    padding: 10px;
   }
 
   .main-footer__container {
