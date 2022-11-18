@@ -872,7 +872,7 @@ button,
   width: 15px;
 }
 
-.main-header--closed .main-header__toggle:after {
+.main-header--closed .main-header__toggle::after {
   cursor: pointer;
   display: block;
   content: "";
@@ -881,7 +881,7 @@ button,
   height: 14px;
 }
 
-.main-header--opened .main-header__toggle:after {
+.main-header--opened .main-header__toggle::after {
   cursor: pointer;
   display: block;
   content: "";
@@ -913,9 +913,9 @@ button,
   width: 100%;
   min-height: 650px;
   position: relative;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .main-banner__container {
@@ -1067,6 +1067,10 @@ button,
   padding: 86px 45px 120px;
 }
 
+.catalog__pic {
+  background-color: #76a0cd;
+}
+
 .catalog__title {
   margin: 0;
   margin-bottom: 48px;
@@ -1087,15 +1091,14 @@ button,
 }
 
 .catalog__item {
-  background-color: #76a0cd;
   color: #f9fbfd;
   width: 100%;
   min-height: 386px;
   position: relative;
   z-index: 2;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40));
-  background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%);
-  background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011c40));
+  background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011c40 100%);
+  background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011c40 100%);
 }
 
 .catalog__about {
@@ -1238,8 +1241,8 @@ button,
   width: 403px;
   background-color: #011c40;
   color: #f9fbfd;
-  -webkit-box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
-  box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  -webkit-box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
+  box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
 }
 
 .booking__description {
@@ -1361,6 +1364,68 @@ button,
   line-height: 21px;
   background-color: #f9fbfd;
   color: #011c40;
+}
+
+.contacts {
+  min-width: 320px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.contacts__container {
+  padding-top: 120px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 560px calc(100% - 660px);
+  grid-template-columns: 560px calc(100% - 660px);
+  grid-column-gap: 100px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.contacts__map {
+  background-color: bisque;
+  width: 100%;
+  height: 306px;
+  position: relative;
+  z-index: 2;
+}
+
+.contacts__description {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 30px;
+}
+
+.contacts__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.contacts__icon {
+  display: block;
+  width: 18px;
+  height: 22px;
+}
+
+.contacts__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+  grid-template-columns: 100%;
+  grid-row-gap: 22px;
+}
+
+.contacts__item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 18px calc(100% - 28px);
+  grid-template-columns: 18px calc(100% - 28px);
+  grid-column-gap: 10px;
 }
 
 .main-footer {
@@ -1511,7 +1576,6 @@ button,
   }
 
   .main-header__container {
-    padding-bottom: 0;
     padding: 30px 45px 25px;
   }
 
@@ -1681,6 +1745,26 @@ button,
     margin: 24px 0 31px;
   }
 
+  .contacts__container {
+    -ms-grid-columns: (calc((100% - 30px) / 2))[2];
+    grid-template-columns: repeat(2, calc((100% - 30px) / 2));
+    grid-column-gap: 30px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .contacts__map {
+    height: 335px;
+  }
+
+  .contacts__description {
+    margin-bottom: 26px;
+  }
+
+  .contacts__icon--map {
+    margin-top: 6px;
+  }
+
   .main-footer__container {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -1798,9 +1882,6 @@ button,
 
   .main-header--opened .main-header__link {
     margin: 0;
-  }
-
-  .main-header--opened .main-header__link {
     color: #011c40;
     font-size: 18px;
     line-height: 22px;
@@ -1957,6 +2038,26 @@ button,
 
   .booking__submit {
     padding: 10px;
+  }
+
+  .contacts__container {
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    grid-row-gap: 37px;
+    padding: 58px 15px 65px;
+  }
+
+  .contacts__map {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    height: 316px;
+  }
+
+  .contacts__description {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
   }
 
   .main-footer__container {

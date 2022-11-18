@@ -382,7 +382,7 @@
             <source type="image/webp" srcset="img/form-bg-mobile.webp, img/form-bg-mobile@2.webp 2x">
             <source media="(min-width: 1024px)" srcset="img/form-bg-desktop.jpg, img/form-bg-desktop@2.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/form-bg-tablet.jpg, img/form-bg-tablet@2.jpg 2x">
-            <img class="bg" src="img/form-bg-mobile.jpg" srcset="img/form-bg-mobile@2.jpg" alt="Фон круиза Минион">
+            <img class="bg" src="img/form-bg-mobile.jpg" srcset="img/form-bg-mobile@2.jpg" alt="Фон формы раннего бронирования">
           </picture>
           <div class="booking__container container">
             <div class="booking__text">
@@ -410,6 +410,36 @@
               </div>
               <button class="booking__submit" type="submit">Оставить заявку</button>
             </form>
+          </div>
+        </section>
+        <section class="contacts">
+          <h2 class="visually-hidden">Контакты</h2>
+          <div class="contacts__container container">
+            <div class="contacts__map">
+              <picture class="contacts__pic">
+                <source type="image/webp" media="(min-width: 1024px)" srcset="img/map-bg-desktop.webp, img/map-bg-desktop@2.webp 2x">
+                <source type="image/webp" srcset="img/map-bg-tablet.webp, img/map-bg-tablet@2.webp 2x">
+                <source media="(min-width: 1024px)" srcset="img/map-bg-desktop.jpg, img/map-bg-desktop@2.jpg 2x">
+                <img class="bg" src="img/map-bg-tablet.jpg" srcset="img/map-bg-tablet@2.jpg" alt="Фон карты">
+              </picture>
+            </div>
+            <div class="contacts__info">
+              <p class="contacts__description">У&nbsp;вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.</p>
+              <ul class="contacts__list list">
+                <li class="contacts__item">
+                  <svg class="contacts__icon contacts__icon--map">
+                    <use xlink:href="img/sprite/sprite.svg#map-pin"></use>
+                  </svg>
+                  <span class="contacts__text">г.&nbsp;Санкт&nbsp;Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8</span>
+                </li>
+                <li class="contacts__item">
+                  <svg class="contacts__icon">
+                    <use xlink:href="img/sprite/sprite.svg#telephone"></use>
+                  </svg>
+                  <a class="contacts__text" href="tel:+78002000000">8-800-200-00-00</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
       </main>
