@@ -1159,6 +1159,10 @@ button,
 }
 
 .catalog__link {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   width: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -1377,7 +1381,15 @@ button,
   background-position: 3px 5px;
 }
 
+.booking__checkbox-container input:focus-visible ~ label::before {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+
 .booking__submit {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   cursor: pointer;
   padding: 12px;
   width: 100%;
@@ -1512,6 +1524,9 @@ button,
 }
 
 .main-footer__link {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   cursor: pointer;
   color: #f9fbfd;
   font-size: 16px;

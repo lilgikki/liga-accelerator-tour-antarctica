@@ -216,7 +216,12 @@
   }
 }
 
+.booking__checkbox-container input:focus-visible ~ label::before {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+
 .booking__submit {
+  user-select: none;
   cursor: pointer;
   padding: 12px;
   width: 100%;
