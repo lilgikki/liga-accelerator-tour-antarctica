@@ -11,7 +11,7 @@ const yandexMap = () => {
 
     const pin = new ymaps.Placemark(COORDINATES, {}, {
       iconLayout: 'default#image',
-      iconImageHref: '/img/svg/map-pin.svg',
+      iconImageHref: './img/svg/map-pin.svg',
       iconImageSize: [18, 22],
       iconImageOffset: [0, -20],
     });
