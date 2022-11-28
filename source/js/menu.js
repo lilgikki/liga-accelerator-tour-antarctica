@@ -28,6 +28,12 @@ const clickToggle = () => {
 const activateMenu = () => {
   if (menu) {
     menuToggle.addEventListener('click', clickToggle);
+    document.addEventListener('click', (e) => {
+      const target = e.target;
+      if (!target.closest('.main-header__container')) {
+        closeMenu();
+      }
+    });
   }
 };
 
