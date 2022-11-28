@@ -59,10 +59,18 @@
 .catalog__item {
   color: $color-alice-blue;
   width: 100%;
-  height: 386px;
+  padding-top: 148%;
   position: relative;
   z-index: 2;
   background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, $color-tangaroa 100%);
+
+  @include vp-1023 {
+    padding-top: 125%;
+  }
+
+  @include vp-767 {
+    padding-top: 143%;
+  }
 }
 
 .catalog__about {
@@ -134,7 +142,7 @@
 
 .catalog__item:hover .catalog__about,
 .catalog__item:focus-within .catalog__about {
-  position: relative;
+  position: absolute;
   transition: 0.6s;
   width: 100%;
   height: 100%;

@@ -1107,7 +1107,7 @@ button,
 .catalog__item {
   color: #f9fbfd;
   width: 100%;
-  height: 386px;
+  padding-top: 148%;
   position: relative;
   z-index: 2;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011c40));
@@ -1183,7 +1183,7 @@ button,
 
 .catalog__item:hover .catalog__about,
 .catalog__item:focus-within .catalog__about {
-  position: relative;
+  position: absolute;
   -webkit-transition: 0.6s;
   -o-transition: 0.6s;
   transition: 0.6s;
@@ -1770,6 +1770,10 @@ button,
     grid-template-columns: repeat(2, calc((100% - 30px) / 2));
   }
 
+  .catalog__item {
+    padding-top: 125%;
+  }
+
   .catalog__about {
     padding: 0 0 26px 35px;
   }
@@ -2050,6 +2054,10 @@ button,
   .catalog__list {
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
+  }
+
+  .catalog__item {
+    padding-top: 143%;
   }
 
   .catalog__about {
