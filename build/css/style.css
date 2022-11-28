@@ -1107,7 +1107,7 @@ button,
 .catalog__item {
   color: #f9fbfd;
   width: 100%;
-  min-height: 386px;
+  height: 386px;
   position: relative;
   z-index: 2;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011c40));
@@ -1181,22 +1181,26 @@ button,
   opacity: 0.8;
 }
 
-.catalog__item:hover .catalog__about {
+.catalog__item:hover .catalog__about,
+.catalog__item:focus-within .catalog__about {
   position: relative;
   -webkit-transition: 0.6s;
   -o-transition: 0.6s;
   transition: 0.6s;
   width: 100%;
   height: 100%;
+  overflow-y: scroll;
   padding: 29px 25px 35px;
   background-color: #011c40;
 }
 
-.catalog__item:hover h3 {
+.catalog__item:hover h3,
+.catalog__item:focus-within h3 {
   margin-bottom: 13px;
 }
 
-.catalog__item:hover .catalog__text {
+.catalog__item:hover .catalog__text,
+.catalog__item:focus-within .catalog__text {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 100%;
@@ -1208,7 +1212,8 @@ button,
   grid-row-gap: 12px;
 }
 
-.catalog__item:hover .catalog__link {
+.catalog__item:hover .catalog__link,
+.catalog__item:focus-within .catalog__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1261,6 +1266,9 @@ button,
   display: block;
   padding: 44px 50px 50px;
   width: 403px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   background-color: #011c40;
   color: #f9fbfd;
   -webkit-box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
@@ -1419,9 +1427,6 @@ button,
   -ms-grid-columns: 560px calc(100% - 660px);
   grid-template-columns: 560px calc(100% - 660px);
   grid-column-gap: 100px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .contacts__map {
@@ -1434,6 +1439,12 @@ button,
 
 .contacts__bg {
   z-index: 0;
+}
+
+.contacts__info {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .contacts__description {
@@ -1768,11 +1779,13 @@ button,
     line-height: 27px;
   }
 
-  .catalog__item:hover .catalog__about {
+  .catalog__item:hover .catalog__about,
+  .catalog__item:focus-within .catalog__about {
     padding: 29px 35px 34px;
   }
 
-  .catalog__item:hover h3 {
+  .catalog__item:hover h3,
+  .catalog__item:focus-within h3 {
     margin-bottom: 14px;
   }
 
@@ -1914,6 +1927,7 @@ button,
   }
 
   .main-header--opened .main-header__container {
+    overflow-y: scroll;
     -webkit-transition: 0.3s ease;
     -o-transition: 0.3s ease;
     transition: 0.3s ease;
@@ -1923,7 +1937,7 @@ button,
     width: 89%;
     min-width: 285px;
     padding: 20px 15px;
-    height: 100%;
+    height: 100vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -1931,6 +1945,8 @@ button,
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
 
   .main-header--opened .main-header__list {
@@ -2040,7 +2056,8 @@ button,
     padding: 0 0 18px 25px;
   }
 
-  .catalog__item:hover .catalog__about {
+  .catalog__item:hover .catalog__about,
+  .catalog__item:focus-within .catalog__about {
     padding: 29px 25px 34px;
   }
 
@@ -2067,6 +2084,9 @@ button,
   }
 
   .booking form {
+    min-width: 290px;
+    max-width: 100%;
+    width: auto;
     padding: 36px 30px 40px;
   }
 

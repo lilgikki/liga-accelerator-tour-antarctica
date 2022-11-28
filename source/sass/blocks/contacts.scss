@@ -9,7 +9,6 @@
   display: grid;
   grid-template-columns: 560px calc(100% - 660px);
   grid-column-gap: 100px;
-  align-items: center;
 
   @include vp-1023 {
     grid-template-columns: repeat(2, calc((100% - 30px) / 2));
@@ -44,6 +43,10 @@
 
 .contacts__bg {
   z-index: 0;
+}
+
+.contacts__info {
+  align-self: center;
 }
 
 .contacts__description {

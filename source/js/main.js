@@ -2,7 +2,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {activateMenu} from './menu.js';
-import {submitFormBooking, getMask} from './booking.js';
+import {submitFormBooking} from './booking.js';
 import {yandexMap} from './map.js';
 import {scrollTo} from './scroll.js';
 
@@ -20,7 +20,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
   activateMenu();
   submitFormBooking();
-  getMask();
 
   ymaps.ready(yandexMap);
   scrollTo();

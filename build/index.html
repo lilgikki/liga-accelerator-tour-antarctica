@@ -114,7 +114,7 @@
           <div class="catalog__container container">
             <h2 class="catalog__title">Ближайшие круизы</h2>
             <ul class="catalog__list list">
-              <li class="catalog__item">
+              <li class="catalog__item" tabindex="0">
                 <picture class="catalog__pic">
                   <source type="image/webp" media="(min-width: 1024px)" srcset="img/desktop-catalog-astoria.webp, img/desktop-catalog-astoria@2.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet-catalog-astoria.webp, img/tablet-catalog-astoria@2.webp 2x">
@@ -144,7 +144,7 @@
                   <a class="catalog__link" href="#">Забронировать</a>
                 </div>
               </li>
-              <li class="catalog__item">
+              <li class="catalog__item" tabindex="0">
                 <picture class="catalog__pic">
                   <source type="image/webp" media="(min-width: 1024px)" srcset="img/desktop-catalog-astoria.webp, img/desktop-catalog-astoria@2.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet-catalog-astoria.webp, img/tablet-catalog-astoria@2.webp 2x">
@@ -174,7 +174,7 @@
                   <a class="catalog__link" href="#">Забронировать</a>
                 </div>
               </li>
-              <li class="catalog__item">
+              <li class="catalog__item" tabindex="0">
                 <picture class="catalog__pic">
                   <source type="image/webp" media="(min-width: 1024px)" srcset="img/desktop-catalog-atlantic.webp, img/desktop-catalog-atlantic@2.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet-catalog-atlantic.webp, img/tablet-catalog-atlantic@2.webp 2x">
@@ -204,7 +204,7 @@
                   <a class="catalog__link" href="#">Забронировать</a>
                 </div>
               </li>
-              <li class="catalog__item">
+              <li class="catalog__item" tabindex="0">
                 <picture class="catalog__pic">
                   <source type="image/webp" media="(min-width: 1024px)" srcset="img/desktop-catalog-odissei.webp, img/desktop-catalog-odissei@2.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet-catalog-odissei.webp, img/tablet-catalog-odissei@2.webp 2x">
@@ -234,7 +234,7 @@
                   <a class="catalog__link" href="#">Забронировать</a>
                 </div>
               </li>
-              <li class="catalog__item">
+              <li class="catalog__item" tabindex="0">
                 <picture class="catalog__pic">
                   <source type="image/webp" media="(min-width: 1024px)" srcset="img/desktop-catalog-olimpia.webp, img/desktop-catalog-olimpia@2.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet-catalog-olimpia.webp, img/tablet-catalog-olimpia@2.webp 2x">
@@ -264,7 +264,7 @@
                   <a class="catalog__link" href="#">Забронировать</a>
                 </div>
               </li>
-              <li class="catalog__item">
+              <li class="catalog__item" tabindex="0">
                 <picture class="catalog__pic">
                   <source type="image/webp" media="(min-width: 1024px)" srcset="img/desktop-catalog-avrora.webp, img/desktop-catalog-avrora@2.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet-catalog-avrora.webp, img/tablet-catalog-avrora@2.webp 2x">
@@ -294,7 +294,7 @@
                   <a class="catalog__link" href="#">Забронировать</a>
                 </div>
               </li>
-              <li class="catalog__item">
+              <li class="catalog__item" tabindex="0">
                 <picture class="catalog__pic">
                   <source type="image/webp" media="(min-width: 1024px)" srcset="img/desktop-catalog-leonor.webp, img/desktop-catalog-leonor@2.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet-catalog-leonor.webp, img/tablet-catalog-leonor@2.webp 2x">
@@ -324,7 +324,7 @@
                   <a class="catalog__link" href="#">Забронировать</a>
                 </div>
               </li>
-              <li class="catalog__item">
+              <li class="catalog__item" tabindex="0">
                 <picture class="catalog__pic">
                   <source type="image/webp" media="(min-width: 1024px)" srcset="img/desktop-catalog-minion.webp, img/desktop-catalog-minion@2.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet-catalog-minion.webp, img/tablet-catalog-minion@2.webp 2x">
@@ -374,11 +374,11 @@
               <div class="booking__inputs-wrapper">
                 <label for="name">
                   <span class="visually-hidden">Имя</span>
-                  <input type="text" id="name" placeholder="Имя" name="name" pattern="^[A-Za-zА-Яа-яЁё\s]+$" required>
+                  <input type="text" id="name" placeholder="Имя" name="name" pattern="^[A-Za-zА-Яа-яЁё\s\-]+$" required>
                 </label>
                 <label for="tel">
                   <span class="visually-hidden">Телефон</span>
-                  <input type="tel" id="tel" placeholder="Телефон" name="telephone" pattern="8[0-9]{10}" required>
+                  <input type="tel" id="tel" placeholder="Телефон" name="telephone" pattern="^[0-9\s\-\+\)\(]+$" required>
                 </label>
                 <label for="email">
                   <span class="visually-hidden">Email</span>
