@@ -1107,7 +1107,7 @@ button,
 .catalog__item {
   color: #f9fbfd;
   width: 100%;
-  padding-top: 148%;
+  padding-top: 148.5%;
   position: relative;
   z-index: 2;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011c40));
@@ -1757,7 +1757,7 @@ button,
   }
 
   .catalog__container {
-    padding: 90px 60px 102px;
+    padding: 90px 60px 100px;
   }
 
   .catalog__title {
@@ -1802,7 +1802,7 @@ button,
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding: 87px 45px 99px;
+    padding: 88px 45px 99px;
   }
 
   .booking__title {
